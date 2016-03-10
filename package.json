@@ -13,7 +13,7 @@
     "full stack",
     "Express",
     "Node",
-    "javascript",
+    "javascript"
   ],
   "scripts": {
   "start": "node server.js"
