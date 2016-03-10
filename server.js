@@ -3,31 +3,8 @@
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 var express = require('express');
-//var routes = require('./app/routes/index.js');
-//var mongoose = require('mongoose');
-//var passport = require('passport');
-//var session = require('express-session');
-
 var app = express();
-//require('dotenv').load();
-//require('./app/config/passport')(passport);
 
-//mongoose.connect(process.env.MONGO_URI);
-
-//app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
-//app.use('/public', express.static(process.cwd() + '/public'));
-//app.use('/common', express.static(process.cwd() + '/app/common'));
-
-//app.use(session({
-	//secret: 'secretClementine',
-	//resave: false,
-	//saveUninitialized: true
-//}));
-
-//app.use(passport.initialize());
-//app.use(passport.session());
-
-//routes(app, passport);
 app.get('/', function(req,res) {
 	res.end('Add a string to the end of the URL to use the microservice...\n\nFor example: \n\nhttps://timestamp-hamptonjt.c9users.io/April%2011,%201977')
 	
@@ -48,7 +25,7 @@ app.get('/:date', function(req, res) {
 	
 	res.writeHead(200, {'Accept': 'application/json'})
 	
-	if ( isNaN(d) ) {  // d.valueOf() could also work
+	if ( isNaN(d) ) {  
 		// date is not valid as a natural date - check to see if it was a unix date..
 		d = inputDateAsDate
 		var unixDate = Date.parse(d)
