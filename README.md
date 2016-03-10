@@ -18,7 +18,7 @@ To use this API - enter something like this:
 
 or
 
->[https://nameless-woodland-23183.herokuapp.com/June 23, 2015]
+>[https://nameless-woodland-23183.herokuapp.com/June%2023,%202015] 
 
 You should get the results above/below. 
 
