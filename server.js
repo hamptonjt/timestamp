@@ -6,7 +6,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req,res) {
-	res.end('Add a string to the end of the URL to use the microservice...\n\nFor example: \n\nhttps://timestamp-hamptonjt.c9users.io/April%2011,%201977')
+	res.writeHead(200, {'content-type': 'text/html'})
+	res.end('<h1>API Basejump: Timestamp Microservice</h1>Add a string to the end of the URL to use the microservice...<br>&nbsp;</br>For example: <br>&nbsp;</br>https://nameless-woodland-23183.herokuapp.com/April%2011,%201977')
 	
 })
 
@@ -52,7 +53,7 @@ app.get('/:date', function(req, res) {
 		res.end(JSON.stringify(timestamp))
 	}
 	
-	console.log('Input Date:', inputDate)
+	console.log('Input:', inputDate)
 	console.log('Unix:', timestamp.unix)
 	console.log('Natural:', timestamp.natural)
 })
