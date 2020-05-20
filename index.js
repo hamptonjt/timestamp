@@ -30,7 +30,7 @@ app.get('/:date', function(req, res) {
 			timestamp.unix = null
 			timestamp.utc= null
 			console.log('Invalid Date by time...')
-			res.end(JSON.stringify(timestamp))
+			res.end(JSON.stringify({"error": "Invalid Date"}))
 		}
 		else {
 			// date is valid...
