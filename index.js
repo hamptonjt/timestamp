@@ -16,11 +16,8 @@ app.get('/:date', function(req, res) {
 	}
 	
 	var inputDate = req.params.date
-	var inputDateAsDate = new Date()
+	var inputDateAsDate = new Date(inputDate)
 	var d = Date.parse(inputDate)
-	var utcDate
-	
-	inputDateAsDate.setTime(inputDate * 1000) // convert to milliseconds...
 	
 	res.writeHead(200, {'Accept': 'application/json'})
 	
