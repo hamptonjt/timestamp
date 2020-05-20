@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "free code camp basejump - timestamp microservice",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamptonjt/timestamp"
+  },
+  "homepage": "https://github.com/hamptonjt/timestamp",
+  "bugs": "https://github.com/hamptonjt/timestamp/issues",
+  "keywords": [
+    "full stack",
+    "Express",
+    "Node",
+    "javascript"
+  ],
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
