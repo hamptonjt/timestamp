@@ -1,31 +1,14 @@
 {
-  "name": "fcc-timestamp",
+  "name": "fcc_timestamp",
   "version": "1.0.0",
-  "description": "Free Code Camp basejump - timestamp microservice",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hamptonjt/timestamp"
-  },
-  "homepage": "https://github.com/hamptonjt/timestamp",
-  "bugs": "https://github.com/hamptonjt/timestamp/issues",
-  "keywords": [
-    "full stack",
-    "Express",
-    "Node",
-    "javascript"
-  ],
+  "description": "free code camp basejump - timestamp microservice",
+  "main": "index.js",
   "scripts": {
-  "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jerry Hampton",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
-    "dotenv": "^1.2.0",
-    "express": "^4.12.4",
-    "express-session": "^1.11.3",
-    "mongoose": "^4.1.0",
-    "passport": "^0.3.0",
-    "passport-github": "^1.0.0"
+    "express": "^4.17.1"
   }
 }

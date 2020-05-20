@@ -7,7 +7,7 @@ var app = express();
 
 app.get('/', function(req,res) {
 	res.writeHead(200, {'content-type': 'text/html'})
-	res.end('<h1>API Basejump: Timestamp Microservice</h1>Add a string to the end of the URL to use the microservice...<br>&nbsp;</br>For example: <br>&nbsp;</br>https://nameless-woodland-23183.herokuapp.com/April%2011,%201977')
+	res.end('<h1>API Basejump: Timestamp Microservice</h1>Add a string to the end of the URL to use the microservice...<br>&nbsp;</br>For example: <br>&nbsp;</br>.../April 11, 1977')
 	
 })
 
@@ -28,8 +28,8 @@ app.get('/:date', function(req, res) {
 	
 	if ( isNaN(d) ) {  
 		// date is not valid as a natural date - check to see if it was a unix date..
-		d = inputDateAsDate
-		var unixDate = Date.parse(d)
+		// d = inputDateAsDate
+		var unixDate = Date.parse(inputDateAsDate)
 		if ( isNaN(unixDate) ) {
 			// date is invalid
 			timestamp.unix = null
